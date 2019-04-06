@@ -1,0 +1,28 @@
+{
+    "name": "dummy",
+    "version": "1.0.0",
+    "description": "This is a dummy project. No serious thoughts given.",
+    "main": "Server.js",
+    "scripts": {
+      "client-install": "npm install --prefix client",
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "KodFyl",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "concurrently": "^4.1.0",
+      "cors": "^2.8.5",
+      "express": "^4.16.4",
+      "is-empty": "^1.2.0",
+      "mongoose": "^5.4.20",
+      "validator": "^10.11.0"
+    },
+    "devDependencies": {
+      "nodemon": "^1.18.10"
+    }
+  }
+  
